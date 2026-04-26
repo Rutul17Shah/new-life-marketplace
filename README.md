@@ -31,3 +31,70 @@ A full-stack web application that allows users to buy and sell refurbished elect
 ---
 
 ## 🏗️ Project Structure
+├── admin/ # Admin dashboard
+├── app/ # Frontend (React)
+├── server/ # Backend (Node.js + Express)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+git clone https://github.com/your-username/new-life-marketplace.git
+
+cd new-life-marketplace
+
+
+---
+
+### 2. Setup Backend
+cd server
+npm install
+npm start
+
+---
+
+### 3. Setup Frontend
+cd app
+npm install
+npm start
+
+---
+
+### 4. Database Setup
+- Create a MySQL database
+- Import your `.sql` file (if available)
+- Update database credentials in backend config file
+
+
+---
+
+## 🎯 Use Case
+
+This platform helps users:
+- Sell unused or old electronic products
+- Purchase refurbished products at lower prices
+- Manage orders and transactions efficiently
+
+---
+
+## 🔮 Future Improvements
+
+- Order tracking system
+- Payment gateway integration (Stripe/Razorpay)
+- Mobile app version
+- Enhanced UI/UX
+
+---
+
+## 👤 Author
+
+**Rutul Shah**
+
+---
+
+## 📌 Notes
+
+This project was developed as part of academic learning and internship experience to demonstrate full-stack development skills.
+
+---
