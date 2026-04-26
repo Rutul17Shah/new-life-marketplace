@@ -31,9 +31,13 @@ A full-stack web application that allows users to buy and sell refurbished elect
 ---
 
 ## 🏗️ Project Structure
-├── admin/ # Admin dashboard
-├── app/ # Frontend (React)
-├── server/ # Backend (Node.js + Express)
+
+```bash
+new-life-marketplace/
+├── admin/    # Admin dashboard
+├── app/      # Frontend (React)
+└── server/   # Backend (Node.js + Express)
+```
 
 ---
 
