@@ -1,0 +1,14 @@
+How to make server side in node 
+
+steps in server folder
+
+npm init-y
+npm install mysql
+npm i cors
+npm i express
+npm i body-parser
+
+
+step in frontend
+
+npm i axios
