@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NLF Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="./res/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./res/vendors/css/vendor.bundle.base.css">
+    <script src="https://kit.fontawesome.com/6b5d1eab95.js" crossorigin="anonymous"></script>
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./res/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./res/images/favicon.ico" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src=".res/js/hoverable-collapse.js"></script>
+    <script>
+      (function($) {
+  'use strict';
+  //Open submenu on hover in compact sidebar mode and horizontal menu mode
+  $(document).on('mouseenter mouseleave', '.sidebar .nav-item', function(ev) {
+    var body = $('body');
+    var sidebarIconOnly = body.hasClass("sidebar-icon-only");
+    var sidebarFixed = body.hasClass("sidebar-fixed");
+    if (!('ontouchstart' in document.documentElement)) {
+      if (sidebarIconOnly) {
+        if (sidebarFixed) {
+          if (ev.type === 'mouseenter') {
+            body.removeClass('sidebar-icon-only');
+          }
+        } else {
+          var $menuItem = $(this);
+          if (ev.type === 'mouseenter') {
+            $menuItem.addClass('hover-open')
+          } else {
+            $menuItem.removeClass('hover-open')
+          }
+        }
+      }
+    }
+  });
+  $('.aside-toggler').click(function(){
+    $('.chat-list-wrapper').toggleClass('slide')
+  });
+  })(jQuery);
+    </script>
+
+
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
